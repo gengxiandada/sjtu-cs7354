@@ -1,0 +1,48 @@
+Task one:
+
+git switch -c feature-newFunc
+git add diary.txt
+git commit -m"Added diary entry for feature work"
+git add diary.txt
+git commit -m"Added another diary entry for feature work"
+git switch main
+git merge feature-newFunc
+
+
+Task two:
+
+git switch experiment
+git log
+git switch main
+git cherry-pick d583
+git push origin main
+
+
+Task three:
+
+git switch dev
+git log
+git revert 7e98
+git revert 1a5d
+git push origin dev
+
+
+Task four:
+
+git revert --quit
+git switch main
+git add styles.css
+git commit -m"styles-update"
+git switch feature-upload
+git diff main
+git add styles.css
+git commit -m"conflict-modify"
+
+Task five:
+git switch documentation
+git log
+git rebase -i bf1a
+git switch main
+git merge documentation
+git push origin main
+
